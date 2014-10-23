@@ -1,1 +1,1 @@
-web: bin/hubot -a slack -n mistakebot
+web: bin/hubot -a slack
