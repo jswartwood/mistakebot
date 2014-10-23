@@ -157,4 +157,6 @@ You may want to get comfortable with `heroku logs` and `heroku restart`
 if you're having issues.
 
 
+## Status
+
 [ ![Codeship Status for jswartwood/mistakebot](https://www.codeship.io/projects/548f69f0-3d30-0132-4da6-622d80cfe64c/status)](https://www.codeship.io/projects/43221)
