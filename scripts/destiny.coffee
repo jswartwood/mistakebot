@@ -31,7 +31,4 @@ module.exports = (robot) ->
   robot.respond /drop (.*)/i, (msg) ->
     times = parseInt(msg.match[1]) || 1
 
-    while times -= 1
-      console.log drop_me(msg)
-
-      msg.send drop_me(msg)
+    msg.send drop_me(msg) for x in [0..times]
