@@ -12,4 +12,9 @@ module.exports = (robot) ->
   ]
 
   robot.hear /drop me/i, (msg) ->
-    msg.send msg.random drops
+    drop = msg.random drops
+
+    if msg.message.user.name.toLowerCase() == 'shoff'
+      drop = ':no_mas:'
+
+    msg.send drop
