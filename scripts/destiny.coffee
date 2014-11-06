@@ -2,6 +2,10 @@
 #   Destiny actions
 #
 
+# If you are seeing this, the joke is probably old now.
+# Replace all the code below to just give out random "drops"...
+# nothing special for geis or shoff.
+
 geis_drops = [
   ':mote_of_light:'
   ':strange_coin:'
