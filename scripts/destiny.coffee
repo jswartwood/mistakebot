@@ -15,6 +15,7 @@ drops.push(':no_mas:')
 shoff_drops = geis_drops.slice()
 shoff_drops.push(':no_mas:') for x in [10..1]
 
+geis_drops.push(':exotic_drop:')
 
 drop_me = (msg) ->
   if msg.message.user.name.toLowerCase() == 'shoff'
