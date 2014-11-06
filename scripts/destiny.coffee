@@ -12,7 +12,7 @@ module.exports = (robot) ->
   ]
 
   shoff_drops = drops.slice()
-  for num in [10..1] shoff_drops.push(':no_mas:')
+  shoff_drops.push(':no_mas:') for num in [10..1]
 
   robot.hear /drop me/i, (msg) ->
     drop = msg.random drops
