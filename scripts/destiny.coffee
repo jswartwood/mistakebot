@@ -13,7 +13,7 @@ drops = geis_drops.slice()
 drops.push(':no_mas:')
 
 shoff_drops = geis_drops.slice()
-shoff_drops.push(':no_mas:') for x in [10..1]
+shoff_drops.push(':no_mas:') for x in [5..1]
 
 geis_drops.push(':exotic_drop:')
 
