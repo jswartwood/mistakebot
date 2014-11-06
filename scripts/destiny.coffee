@@ -36,4 +36,4 @@ module.exports = (robot) ->
 
     for x in [1..times]
       drop = drop_me msg
-      msg.send drop if drop
+      msg.send(drop) if drop?
