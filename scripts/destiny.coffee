@@ -31,4 +31,4 @@ module.exports = (robot) ->
   robot.respond /drop (.*)/i, (msg) ->
     times = parseInt(msg.match[1]) || 1
 
-    msg.send drop_me(msg) for x in [0..times]
+    msg.send drop_me(msg) for x in [1..times]
