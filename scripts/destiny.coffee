@@ -17,13 +17,14 @@ shoff_drops.push(':no_mas:') for x in [10..1]
 
 
 drop_me = (msg) ->
-  msg.random drops
-
   if msg.message.user.name.toLowerCase() == 'shoff'
-    msg.random shoff_drops
+    return msg.random shoff_drops
 
   if msg.message.user.name.toLowerCase() == 'geis'
-    msg.random geis_drops
+    return msg.random geis_drops
+
+  msg.random drops
+
 
 module.exports = (robot) ->
 
