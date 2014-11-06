@@ -13,7 +13,7 @@ drops = geis_drops.slice()
 drops.push(':no_mas:')
 
 shoff_drops = geis_drops.slice()
-shoff_drops.push(':no_mas:') for num in [10..1]
+shoff_drops.push(':no_mas:') for x in [10..1]
 
 
 drop_me = (msg) ->
@@ -27,8 +27,8 @@ drop_me = (msg) ->
 
 module.exports = (robot) ->
 
-  robot.hear /drop (.*)/i, (msg) ->
+  robot.respond /drop (.*)/i, (msg) ->
     times = Number(msg.match[1]) || 1
 
-    while (times--)
+    while times -= 1
       msg.send drop_me(msg)
