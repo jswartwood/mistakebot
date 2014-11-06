@@ -28,7 +28,7 @@ drop_me = (msg) ->
 module.exports = (robot) ->
 
   robot.respond /drop (.*)/i, (msg) ->
-    times = Number(msg.match[1]) || 1
+    times = parseInt(msg.match[1]) || 1
 
     while times -= 1
       msg.send drop_me(msg)
