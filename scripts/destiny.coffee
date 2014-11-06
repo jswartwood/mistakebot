@@ -9,11 +9,13 @@ geis_drops = [
   ':exotic_drop:'
 ]
 
+bad_drop = null
+
 drops = geis_drops.slice()
-drops.push(':no_mas:')
+drops.push(bad_drop)
 
 shoff_drops = geis_drops.slice()
-shoff_drops.push(':no_mas:') for x in [5..1]
+shoff_drops.push(bad_drop) for x in [5..1]
 
 geis_drops.push(':exotic_drop:')
 
@@ -32,4 +34,6 @@ module.exports = (robot) ->
   robot.respond /drop (.*)/i, (msg) ->
     times = parseInt(msg.match[1]) || 1
 
-    msg.send drop_me(msg) for x in [1..times]
+    for x in [1..times]
+      drop = drop_me msg
+      msg.send drop if drop
