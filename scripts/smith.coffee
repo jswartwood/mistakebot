@@ -8,9 +8,9 @@ module.exports = (robot) ->
     jaden = (msg) ->
       msg.http("http://212.47.237.159/jaden")
        .get() (err, res, body) ->
-          msg.send body
+          msg.send "JADEN: " + body
 
     willow = (msg) ->
       msg.http("http://212.47.237.159/willow")
        .get() (err, res, body) ->
-          msg.send body
+          msg.send "WILLOW: " + body
