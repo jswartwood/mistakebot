@@ -1,20 +1,14 @@
 [
   "hubot-cute-me",
   "hubot-darksky",
-  "hubot-diagnostics",
   "hubot-dogeme",
   "hubot-help",
-  "hubot-heroku-keepalive",
   "hubot-humanity",
   "hubot-google-images",
   "hubot-google-translate",
   "hubot-pugme",
   "hubot-maps",
   "hubot-redis-brain",
-  "hubot-rules",
-  "hubot-seen",
-  "hubot-shipit",
-  "hubot-tell",
   "hubot-voting",
   "hubot-youtube"
 ]
